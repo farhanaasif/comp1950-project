@@ -81,8 +81,10 @@ input, textarea {
 body {
   padding: 0 40px;
 }
-
-body, input, textarea {
+textarea{
+	margin-top:15px;
+}
+body, input {
   background: #001f3f url(../images/bg2.jpg) repeat fixed;
   color: #8080;
   font-family: "Lato", sans-serif;
@@ -147,7 +149,7 @@ h3 {
   color: #F2635F;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 22px;
   margin-bottom: 4px;
   color: #0072BB;
