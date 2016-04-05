@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+author: orkideh kavei (#A00992999)
+date: 03/30/2016
+last modified: 04/05 by Eunhye Cho
+Description: Rarional Page
+Comp 1950 Final Project
+-->
+<html>
+	<head>
+		<title>BCIT Comp 1950 | Proto_site Page</title>
+		<meta name="description" content="Final project BCIT Comp 1950 | Proto_site Page">
+		<meta name="author" content="orkideh">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<link rel="stylesheet" href="css/protosite_style.css" media="all" />
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+		<script>
+			$(document).ready(function(){
+				var seconds = 5000;
+			  var step = 1;
+			  var limit = 3;
+			  $("#about_project_background").addClass("contents_backimage-"+step).fadeIn(500);
+			  setInterval(function(){
+				$("#about_project_background").fadeOut(500,function(){
+				   $(this).removeClass("contents_backimage-"+step);
+				   step = (step > limit) ? 1 : step + 1;
+				  $("#about_project_background").addClass("contents_backimage-"+step).fadeIn(500);
+				});
+			  },seconds);
+			
+			
+				$(".cotents_button").click(function(){
+					$("#contents_intro").toggle();
+				});
+			});
+			
+		</script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header_bar">
+				<header>
+					<figure>
+						<img src="images/bcit_logo.png" alt="bcit_logo" width="70"/>
+					</figure>
+
+				</header>
+<!--
+navigation starts here!
+-->
+				<nav>
+					<ul id="nav_lists">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="protosite.html">Proto-site</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+						<li><a href="rationale.html">Rationale page</a></li>
+					</ul>
+				</nav>
+			</div>
+
+<!--
+contents starts here!
+-->
+
+			<div id="contents">
+				
+				<section id="project_intro">
+				<h1>project part2</h1>
+				   <div id="about_project_background">
+					<div id="about_project">
+						<p class="title">Project: BCIT COMP1950</p>
+						<p class="sub_title">Redesign<br />
+						COMP1950 Web site</p>
+						
+						<!-- media queries will hide one of the two following divs -->	
+		<div id="fullscreen">Viewport is <strong>greater than 800px</strong></div>
+		<div id="thin">Viewport is <strong>less than 800px</strong></div>
+						<!-- button click: toggle intro -->
+						<button class="cotents_button">MORE<br /><span style="font-size:15px">&or;</span></button>
+
+					</div>
+				  </div>
+<!--toggle part -->
+					<div id="contents_dash">
+					<div class="lectures_folder"><div class="lectures_text"><a href="http://bcitcomp.ca/students/fasif/proto-site/">Home</a></div></div>
+						<div class="lectures_folder"><div class="lectures_text"><a href="http://bcitcomp.ca/students/fasif/proto-site/lecture1.html">Lecture 1</a></div></div>
+						<div class="lectures_folder"><div class="lectures_text"><a href=" http://bcitcomp.ca/students/fasif/proto-site/lecture2.html">Lecture 2</a></div></div>
+						<div class="lectures_folder"><div class="lectures_text"><a href="http://bcitcomp.ca/students/fasif/proto-site/assignments.html">Assignments</a></div></div>
+						
+					</div>	
+				</section>
+
+<!-- team intro starts -->
+				
+			</div>
+
+<!--
+footer starts here!
+ -->
+
+			<footer>
+				<p>&copy; 2016 All rights reserved by our group.</p>
+			</footer>
+
+		</div>
+
+	</body>
+</html>
