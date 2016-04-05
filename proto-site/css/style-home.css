@@ -7,7 +7,7 @@
 Style Sheet for protosite home page responsive design
 Wrote media queries to fix the position of header.
 version: 1.0
-last modified: 04.04.2016 by Farhana Asif
+last modified: 04.04.2016 by Sara Rezaeiara
 author: Sara Rezaeiara
 email: sara.rezaeiara@gmail.com
 
@@ -169,7 +169,7 @@ Vertically right aligned Header
     width: 23em;
     right: 0;
     padding-top: 90px;
-    max-height: 500px;
+    max-height: 550px;
     border-bottom: #ccc 1px solid;
 }
 
