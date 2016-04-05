@@ -622,8 +622,9 @@ Right side navigation
 #header {
   height: 100%;
   position: absolute;
-  width: 27em;
+  width: 23em;
   right: 0;
+  -webkit-padding-end: 65px;
 }
 /* - - - - - - - - - - - - - - -
  footer links should be in lists inlined
