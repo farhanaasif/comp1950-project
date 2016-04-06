@@ -1,7 +1,7 @@
 
 /*
 ---------------------------------------------
- basic styles 
+ basic styles
 ---------------------------------------------
 */
 
@@ -18,7 +18,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -39,7 +39,7 @@ body{
 	height:auto;
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	background-color: #f3f3f3;
+	background-color: #cccccc;
 }
 a{
 	text-decoration:none;
@@ -99,7 +99,7 @@ nav ul li{
 nav ul a:hover{
 	color: #4fff9c;
 	font-weight: 600;
-	
+
 }
 
 nav ul a{
@@ -108,12 +108,47 @@ nav ul a{
 figure{
 	padding: 10px;
 }
+
 section{
-	height: 950px;
-	background-image: url("../images/intro_background_06.jpg");
-	background-repeat: no-repeat;
 	margin-bottom:30px;
+	overflow: hidden;
 }
+
+#project_intro
+{
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
+img[id^="book"]:hover{
+ transform: scale(1.05);
+ box-shadow: 3px 3px 5px #888888;
+ 	z-index: -1;
+}
+.contents_backimage-1{
+	min-height: 500px;
+	background-image: url("../images/intro_background_01.jpg");
+	background-repeat: no-repeat;
+}
+.contents_backimage-2{
+	min-height: 500px;
+	background-image: url("../images/intro_background_02.jpg");
+	background-repeat: no-repeat;
+}
+.contents_backimage-3{
+	min-height: 500px;
+	background-image: url("../images/intro_background_03.jpg");
+	background-repeat: no-repeat;
+}
+.contents_backimage-4{
+	min-height: 500px;
+	background-image: url("../images/intro_background_04.jpg");
+	background-repeat: no-repeat;
+}
+.resources{
+	background: none;
+	display: block;
+}
+
 footer{
 	height: 40px;
 	background-color: #444;
@@ -123,18 +158,6 @@ footer p{
 	text-align: right;
 	padding: 10px;
 }
-p[class="team_title"]:hover{
-
- text-decoration: none;	
-	color:#6875A6;
-	text-shadow: 2px 2px 5px red;
-	border:dashed 1px #6875A6;
-
-}
-
-
-
-
 /*-------------------
 Id selector
 -------------------*/
@@ -146,6 +169,7 @@ Id selector
 	height: auto;
 	background-color: #fff;
 	color: #fff;
+	border: 1px solid #b8b8b8;
 }
 #header_bar{
 	position:fixed;
@@ -156,39 +180,50 @@ Id selector
 	display: inline-block;
 	background-color: #fff;
 }
-
+#about_project_background{
+	position: relative;
+	top: 0px;
+	margin-left: 0px;
+	text-align: center;
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
 #about_project{
 	position: relative;
 	top: 160px;
 	margin-left: 30px;
 	text-align: center;
+	background-repeat: no-repeat;
+	min-height: 500px;
 }
 
+#contents{
+	width: 1024px;
+	margin-top: 100px;
+}
 
-
-#contents_intro{
+#contents_dash{
 	display: block;
-	height: 700px;
-	margin-top: 133px;
-	background-color: #fff;
+	margin-top: 30px;
 	color: #000;
-	padding: 10px 230px;
+	padding: 10px 50px;
 	background-color: #fff;
 }
 
-#team_intro{
+#resources_intro{
+	display: block;
 	text-align: center;
 	background-color: #7FDBFF;
 }
-#team_intro img{
+#resources_intro img{
 	padding-top: 20px;
 	padding-left: 20px;
-	opacity:0.7;
+	opacity:0.8;
 }
-#team_intro img:hover{
+#resources_intro img:hover{
 	opacity:1;
 }
-#contents_intro ul{
+#contents_dash ul{
 	line-height: 1.5;
 }
 /*-------------------
@@ -198,7 +233,7 @@ class selector
 .title{
 	font-size: 1.25em;
 	line-height: 3;
-	
+
 }
 .sub_title{
 	color: #4fff9c;
@@ -232,78 +267,89 @@ class selector
 	background-color: #fff;
 	opacity:0.7;
 }
-.team_title, .team_intro{
+.resources_title, .resources_intro{
 	color: #333;
 }
-.team_title{
-	background-color:#000000;
-	height: 25px;
+.resources_title{
+	background-color:#3f4e79;
+	height: 30px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	padding-top: 8px;
-	color: white;
-	opacity: 0.6;
+	padding-top: 9px;
+	color: #fff;
+	opacity: 0.8;
 	text-align: center;
 }
-.team_intro{
+.resources_intro{
 	text-align: left;
 	padding: 0 30px;
+	clear: both;
+	background-color: red;
 }
-.member{
+.resource{
 	width: 20%;
 	float: left;
-	padding: 10px 10px 10px 30px;
+	padding: 10px 10px 10px 36px;
 	text-align: left;
-}
-
-/*
-This will apply only rational page 
-*/
-#contents_div{
 	display: block;
-	width: 1024px;
-	margin-top: 133px;
-	background-color: #fff;
-	padding-top: 10px;
-	color: #000;
-	background-color: #fff;
 }
-#contents_rationale{
-	width: 1024px;
-	height: 1900px;
-	margin-top: 100px;
+.link_page1, .link_page2, .link_page3,.link_page4{
+	width: 45%;
+	float: left;
+	border: 1px solid #333;
+	margin: 20px;
+	opacity: 0.9;
 }
-.team_rationale{
-	font-family: 'Domine', serif;
-	font-size: 20px;
-	font-style: italic;
-	padding: 10px 0;
-	text-align: left;
+.link_page1{
+	background-image: url("../images_02/home_hover.jpg");
 }
-.team_title{
-	margin: 20px 300px;
+.link_page1:hover{
+	background-image: url("../images_02/home.jpg");
 }
-.rationale_dec{
-	font-size: 14px;
-	line-height: 1.5;
+.link_page3{
+	background-image: url("../images_02/lecture2_hover.jpg");
 }
-.rationale_lists{
-	padding: 10px 0;
-	margin: 0 50px 0 150px;
-	text-align: left;
+.link_page3:hover{
+	background-image: url("../images_02/lecture2.jpg");
 }
-.description04{
-	font-size: 14px;
-	font-family: 'Domine', serif;
-	line-height: 1.5;
-	text-align: left;
-	margin: 0 50px 0 150px;
-	
+.link_page2{
+	background-image: url("../images_02/lecture_hover.jpg");
 }
-
-
+.link_page2:hover{
+	background-image: url("../images_02/lecture.jpg");
+}
+.link_page4{
+	background-image: url("../images_02/assign_hover.jpg");
+}
+.link_page4:hover{
+	background-image: url("../images_02/assign.jpg");
+}
+.lectures_text{
+	position: relative;
+	top: -100px;
+	text-align: center;
+	padding-top:200px;
+	margin-left:0px;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.lectures_text a{
+	color: #fff;
+}
+.lecture_button{
+	position: relative;
+	top: -90px;
+	left: 145px;
+	background-color: #3a517a;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 3px 8px;
+	opacity: 0.8;
+}
 /*
-This will apply only to the print 
+This will apply only to the print
 */
 @media print{
 }
@@ -342,4 +388,5 @@ This will apply only to the print
 	
 	
 	
+
 	
