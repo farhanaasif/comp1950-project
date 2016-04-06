@@ -1,7 +1,7 @@
 
 /*
 ---------------------------------------------
- basic styles 
+ basic styles
 ---------------------------------------------
 */
 
@@ -18,7 +18,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -99,7 +99,7 @@ nav ul li{
 nav ul a:hover{
 	color: #4fff9c;
 	font-weight: 600;
-	
+
 }
 
 nav ul a{
@@ -125,7 +125,7 @@ footer p{
 }
 p[class="team_title"]:hover{
 
- text-decoration: none;	
+ text-decoration: none;
 	color:#6875A6;
 	text-shadow: 2px 2px 5px red;
 	border:dashed 1px #6875A6;
@@ -198,7 +198,7 @@ class selector
 .title{
 	font-size: 1.25em;
 	line-height: 3;
-	
+
 }
 .sub_title{
 	color: #4fff9c;
@@ -257,7 +257,7 @@ class selector
 }
 
 /*
-This will apply only rational page 
+This will apply only rational page
 */
 #contents_div{
 	display: block;
@@ -270,7 +270,7 @@ This will apply only rational page
 }
 #contents_rationale{
 	width: 1024px;
-	height: 2000px;
+	height: 1900px;
 	margin-top: 100px;
 }
 .team_rationale{
@@ -286,29 +286,36 @@ This will apply only rational page
 .rationale_dec{
 	font-size: 14px;
 	line-height: 1.5;
-	list-style: disc;
-	opacity: 0.8;
 }
 .rationale_lists{
-	padding: 10px 0;
-	margin: 0 70px 0 150px;
+	padding: 10px 0 0 10px;
+	margin: 0 50px 0 150px;
 	text-align: left;
-	letter-spacing: 1;
+	list-style: square;
 }
 .description04{
 	font-size: 14px;
 	font-family: 'Domine', serif;
 	line-height: 1.5;
 	text-align: left;
-	margin: 0 50px 0 130px;
+	margin: 0 50px 0 150px;
+
 }
-.banner{
-	height: 120px;
+
+.description05 {
+	font-size: 19px;
+	font-family: 'Domine', serif;
+	line-height: 1.5;
+	text-align: left;
+	margin: 0 50px 0 150px;
+	font-style:italic;
+	text-decoration:none;
+
 }
 
 
 /*
-This will apply only to the print 
+This will apply only to the print
 */
 @media print{
 }
@@ -334,17 +341,17 @@ This will apply only to the print
 @media only screen and (min-width:100px) and (max-width:800px){
 	#fullscreen{		display:none;	}
 	#thin{				display:block;	}
-	
+
 	section img{
 		max-width:100%;
 	}
 	div{max-width:100%}
-	
+
 	nav{
 		overflow:hidden;}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
